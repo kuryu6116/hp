@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+この記事は国会の情報から**議案**と**議員**の分析を行っているサイトです
 
 [Link to another page](./another-page.html).
 
