@@ -3,14 +3,31 @@ layout: default
 ---
 
 この記事は国会の情報から**議案**と**議員**の分析を行っているサイトです
+随時気分がのったらデータは更新しております。
+
+### 分析ダッシュボード
+
+* * *
+
 ### Here is an unordered list:
 
-*   [Link to another page](./another-page.html).
+*   [](./another-page.html).
 *   [Link to another page](./another-page.html).
 *   [Link to another page](./another-page.html).
 *   [Link to another page](./another-page.html).
 
+### 変数型分析項目
 
+* * *
+
+### Here is an unordered list:
+
+*   [](./another-page.html).
+*   [Link to another page](./another-page.html).
+*   [Link to another page](./another-page.html).
+*   [Link to another page](./another-page.html).
+
+<!---
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
@@ -126,3 +143,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+-->
