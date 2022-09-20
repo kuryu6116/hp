@@ -9,10 +9,9 @@ layout: default
 
 * * *
 
-*   [2016年以降の衆参分析ダッシュボード](http://heroktometabase.herokuapp.com/public/dashboard/b6e6e0d9-70c8-4d00-a283-906b25975bbf)
-*   [Link to another page](./another-page.html).
-*   [Link to another page](./another-page.html).
-*   [Link to another page](./another-page.html).
+*   [衆参分析ダッシュボード(2016年以降)](http://heroktometabase.herokuapp.com/public/dashboard/b6e6e0d9-70c8-4d00-a283-906b25975bbf)
+*   [衆議院議員法案提出分析(2016年以降)](http://heroktometabase.herokuapp.com/public/dashboard/9c0c8a56-b736-4fd5-91da-e4f01acd2146)
+*   [参議院議員法案提出分析(2016年以降)](http://heroktometabase.herokuapp.com/public/dashboard/2d95f50d-56f0-4cc6-b733-0a52fdcee022).
 
 ### データベース検索
 
