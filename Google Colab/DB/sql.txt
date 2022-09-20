@@ -1,0 +1,110 @@
+
+-- 所属政党のテーブル
+
+create table if not exists party_type(
+ id integer primary key,
+ name varchar(10) UNIQUE
+ );
+ 
+ -- 国会種別のテーブル
+
+create table if not exists congress_type(
+ id integer primary key,
+ name varchar(10) UNIQUE
+ );
+ 
+  -- 国会会期のテーブル
+
+create table if not exists congress_generation(
+ id integer primary key,
+ generation integer,
+ type_id integer,
+ start_date varchar(20),
+ end_date varchar(20),
+ foreign key (type_id) references congress_type(id)
+ );
+ 
+     -- 議案のテーブル
+
+ 
+ create table if not exists proposal(
+ id integer primary key,
+ name varchar(100),
+ congress_id integer,
+ url varchar(100),
+ foreign key (congress_id) references congress_generation(id)
+ );
+ 
+  -- 衆議院の年季のテーブル
+
+create table if not exists representatives_generation(
+ id integer primary key,
+ generation integer UNIQUE,
+ start_date date,
+ end_date date
+ );
+ 
+   -- 参議院の年季のテーブル
+
+create table if not exists councilors_generation(
+ id integer primary key,
+ generation integer UNIQUE,
+ start_date varchar(20),
+ end_date varchar(20),
+ );
+ 
+     -- 議員のテーブル
+ 
+  create table if not exists diet(
+ id integer primary key,
+ name varchar(50) NOT NULL UNIQUE,
+ party_id integer,
+ foreign key (party_id) references party_type(id)
+ );
+
+ 
+    -- 議員と参議院会期の履歴テーブル
+ 
+  create table if not exists councilors_history(
+ id integer primary key,
+ councilors_id integer,
+ user_id integer,
+ foreign key (councilors_id) references councilors_generation(id),
+ foreign key (user_id) references diet(id)
+ );
+
+    -- 議員と衆議院会期の履歴テーブル
+ 
+  create table if not exists representatives_history(
+ id integer primary key,
+ representatives_id integer,
+ user_id integer,
+ foreign key (representatives_id) references representatives_generation(id),
+ foreign key (user_id) references diet(id)
+ );
+
+     -- 議員と議案のテーブル
+ 
+ create table if not exists diet_proposal(
+ id integer primary key,
+ user_id integer,
+ proposal_id integer,
+ foreign key (user_id) references diet(id),
+ foreign key (proposal_id) references proposal(id)
+ );
+
+ 国会種別の登録
+INSERT INTO congress_type (id,name) Values (1,'通常国会');
+INSERT INTO congress_type (id,name) Values (2,'特別国会');
+INSERT INTO congress_type (id,name) Values (3,'臨時国会');
+
+ 政党の登録
+INSERT INTO party_type (id,name) Values (1,'自由民主党');
+INSERT INTO party_type (id,name) Values (2,'立件民主党');
+INSERT INTO party_type (id,name) Values (3,'日本維新の会');
+INSERT INTO party_type (id,name) Values (4,'公明党');
+INSERT INTO party_type (id,name) Values (5,'国民民主党');
+INSERT INTO party_type (id,name) Values (6,'日本共産党');
+INSERT INTO party_type (id,name) Values (7,'有志の会');
+INSERT INTO party_type (id,name) Values (8,'れいわ新選組');
+INSERT INTO party_type (id,name) Values (9,'無所属');
