@@ -18,7 +18,7 @@ layout: default
 * * *
 
 *   [議員名から提出議案の詳細検索](http://heroktometabase.herokuapp.com/public/question/35ba207c-c89f-4959-b624-225ce75a4c6b)
-*   [法案検索](http://heroktometabase.herokuapp.com/public/question/8fdb47df-b4e7-4f4b-8db0-3058ef088e8e)
+*   [法案名から詳細検索](http://heroktometabase.herokuapp.com/public/question/8fdb47df-b4e7-4f4b-8db0-3058ef088e8e)
 
 <!---
 There should be whitespace between paragraphs.
