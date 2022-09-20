@@ -9,20 +9,16 @@ layout: default
 
 * * *
 
-### Here is an unordered list:
-
-*   [](./another-page.html).
+*   [2016年以降の衆参分析ダッシュボード](http://heroktometabase.herokuapp.com/public/dashboard/b6e6e0d9-70c8-4d00-a283-906b25975bbf)
 *   [Link to another page](./another-page.html).
 *   [Link to another page](./another-page.html).
 *   [Link to another page](./another-page.html).
 
-### 変数型分析項目
+### データベース検索
 
 * * *
 
-### Here is an unordered list:
-
-*   [](./another-page.html).
+*   [議員名から提出議案の詳細検索](http://heroktometabase.herokuapp.com/public/question/35ba207c-c89f-4959-b624-225ce75a4c6b)
 *   [Link to another page](./another-page.html).
 *   [Link to another page](./another-page.html).
 *   [Link to another page](./another-page.html).
